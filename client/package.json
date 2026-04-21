@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "pre-deploy": "npm run build",
+    "deploy-prep": "bash deploy-prep.sh",
+    "quick-release:patch": "npm version patch --no-git-tag-version && git add [package.json](http://_vscodecontentref_/4) && git commit -m \"chore: bump patch version\"",
+    "quick-release:minor": "npm version minor --no-git-tag-version && git add [package.json](http://_vscodecontentref_/5) && git commit -m \"chore: bump minor version\"",
+    "quick-release:major": "npm version major --no-git-tag-version && git add [package.json](http://_vscodecontentref_/6) && git commit -m \"chore: bump major version\""
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
